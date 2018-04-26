@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row, Col, MenuItem, DropdownButton } from 'react-bootstrap';
 
 import Card from 'components/Card/Card.jsx'
 //Enrollment = Typography
@@ -10,6 +10,17 @@ class Typography extends Component {
                 <Grid fluid>
                     <Row>
                         <Col md={12}>
+                        <div>
+                            <DropdownButton title="Menu" type="button" id="basic-nav-dropdown-right" >
+                            <center><h6>Enrollment</h6></center>
+                            <MenuItem eventKey={1}>Enrollment: Add Classes</MenuItem>
+                            <MenuItem eventKey={2}>Enrollment: Drop Classes</MenuItem>
+                            <MenuItem eventKey={3}>Enrollment: Swap Classes</MenuItem>
+                            <MenuItem eventKey={4}>Enrollment: Edit a Classes</MenuItem>
+                            <MenuItem divider />
+                            <MenuItem eventKey={5}>Home</MenuItem>
+                            </DropdownButton>
+                        </div>
                             <Card
                                 title="Light Bootstrap Table Heading"
                                 category="Created using Roboto Font Family"

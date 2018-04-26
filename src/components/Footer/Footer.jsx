@@ -20,12 +20,12 @@ class Footer extends Component {
                             </li>
                             <li>
                                 <a href="#pablo">
-                                    Portfolio
+                                    Solution Center
                                 </a>
                             </li>
                             <li>
                                 <a href="#pablo">
-                                   Blog
+                                   My Classes
                                 </a>
                             </li>
                         </ul>

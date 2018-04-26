@@ -250,16 +250,14 @@ var style = {
 // // // For tables
 // //
 //
-const thArray = ["ID","Name","Salary","Country","City"];
+const thArray = ["Class ID","Class Number","Section","Days & Times","Room","Instructor","Start/End Date"];
 const tdArray = [
-    [ "1" , "Dakota Rice" , "$36,738" , "Niger" , "Oud-Turnhout" ] ,
-    [ "2" , "Minerva Hooper" , "$23,789" , "Curaçao" , "Sinaai-Waas" ] ,
-    [ "3" , "Sage Rodriguez" , "$56,142" , "Netherlands" , "Baileux" ] ,
-    [ "4" , "Philip Chaney" , "$38,735" , "Korea, South" , "Overland Park" ] ,
-    [ "5" , "Doris Greene" , "$63,542" , "Malawi" , "Feldkirchen in Kärnten" ] ,
-    [ "6" , "Mason Porter" , "$78,615" , "Chile" , "Gloucester" ]
+    [ "COMP 3050 - Special Topic" , "16593" , "202" , "Th 5:30PM - 8:15PM" , "Olsen Hall 109 - NC", "Mehrdad Nourai", "01/22/18-05/03/18" ] ,
+    [ "COMP 4620 - GUI II" , "11804" , "201" , "TuTh 3:30PM - 4:45PM" , "Olsen Hall 401 - NC", "Wenjin Zhou", "01/22/18-05/03/18" ] ,
+    [ "COMP 4621 - Mob App II" , "11805" , "201" , "Tu 5:30PM - 8:20PM" , "Olsen Hall 114 - NC" , "Mehrdad Nourai", "01/22/18-05/03/18" ] ,
+    [ "PHYS 1210 - Exploring the Universe" , "16010" , "103" , "MoWeFr 12:00PM - 12:50PM" , "Olney Hall 150 - NC" , "Daniel Katz", "01/22/18-05/03/18" ] ,
+    [ "PHYS 1210L - Lab for Exploring the Universe" , "16032" , "827" , "Fr 10:00AM - 11:50AM" , "Olney 1st NC" , "Timothy Cook", "01/22/18-05/03/18" ]
 ];
-
 
 //
 // //
@@ -529,7 +527,7 @@ var legendSales = {
 var dataBar = {
   labels: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Friday', 'Sat'],
   series: [
-    [0, 5, 6, 7, 8, 12, 0],
+    [0, 2, -8, 2, -8, 3, 0],
   ],
 };
 var optionsBar = {
@@ -540,7 +538,7 @@ var optionsBar = {
     axisY: {
         offset: 80,
         labelInterpolationFnc: function(value){
-            value =  value + 1;
+            value =  value + 2 * -1;
             if(value > 12 )
             return value + ' am';
             else

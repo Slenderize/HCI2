@@ -15,13 +15,12 @@ export class Tasks extends Component{
         const edit = (<Tooltip id="edit_tooltip">Edit Task</Tooltip>);
         const remove = (<Tooltip id="remove_tooltip">Remove</Tooltip>);
         const tasks_title = [
-            'Sign contract for "What are conference organizers afraid of?"',
-            'Lines From Great Russian Literature? Or E-mails From My Boss?',
-            'Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroi',
-            'Create 4 Invisible User Experiences you Never Knew About',
-            'Read "Following makes Medium better"',
-            'Unfollow 5 enemies from twitter'
-        ];
+            'Submit 2018-19 Verification Worksheet to the solution center.',
+            'Submit Parents 2016 W-2 Form(s) to the solution center.',
+            'Submit Students 2016 W-2 Form(s) to the solution center.',
+            'Remove Advising Hold by contracting my Adviser.',
+            'Remove Financial Hold by submitting the required work forms above.'
+                ];
         var tasks = [];
         var number;
         for (var i = 0; i < tasks_title.length; i++) {

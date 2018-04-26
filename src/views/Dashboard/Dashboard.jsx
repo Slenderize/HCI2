@@ -71,7 +71,7 @@ class Dashboard extends Component {
                                 bigIcon={<i className="pe-7s-lock text-danger"></i>}
                                 statsText="Holds"
                                 statsValue="2"
-                                statsIconText="Advising, Finace"
+                                statsIconText="Advising, Finance"
                             />
                         </Col>
                     </Row>
@@ -207,8 +207,8 @@ class Dashboard extends Component {
                         <Col md={12}>
                             <Card
                                 id="chartActivity"
-                                title="2014 Sales"
-                                category="All products including Taxes"
+                                title="Class Schedule"
+                                category="Spring 2018"
                                 stats="Data information certified"
                                 statsIcon="fa fa-check"
                                 content={

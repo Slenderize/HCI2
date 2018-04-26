@@ -33,7 +33,7 @@ class UserProfile extends Component {
                                                 },
                                                 {
                                                  label : "Student ID",
-                                                 type : "number",
+                                                 type : "text",
                                                  bsClass : "form-control",
                                                  placeholder : "ID",
                                                  defaultValue : "0123420",
@@ -106,12 +106,35 @@ class UserProfile extends Component {
                                                 }
                                             ]}
                                         />
-
+                                            
+                                            <FormInputs
+                                            ncols = {["col-md-6" , "col-md-6"]}
+                                            proprieties = {[
+                                                {
+                                                 label : "Phone Number",
+                                                 type : "text",
+                                                 bsClass : "form-control",
+                                                 placeholder : "Phone Number",
+                                                 defaultValue : "978-123-4567"
+                                                },
+                                                {
+                                                 label : "Personal Email",
+                                                 type : "text",
+                                                 bsClass : "form-control",
+                                                 placeholder : "Personal Email",
+                                                 defaultValue : "Bill_Nye@gmail.com"
+                                                }
+                                            ]}
+                                        />
                                         <Row>
                                             <Col md={12}>
                                                 <FormGroup controlId="formControlsTextarea">
                                                     <ControlLabel>About Me</ControlLabel>
-                                                    <FormControl rows="5" componentClass="textarea" bsClass="form-control" placeholder="Here can be your description" defaultValue="Something Here?"/>
+                                                    <FormControl disabled="true" rows="5" componentClass="textarea" bsClass="form-control" placeholder="Here can be your description" defaultValue="Institution - University of Mass Lowell
+Career - Undergraduate
+Program - Kennedy College of Sciences
+Major - Computer Science (BS)
+Option - General"/>
                                                 </FormGroup>
                                             </Col>
                                         </Row>
@@ -136,21 +159,25 @@ class UserProfile extends Component {
                                 userName="Student ID: 0123420"
                                 description={
                                     <span>
-                                    
+                                         <h6>Gender: Male</h6>
+                                         <h6>Date of Birth: 10/12/1976</h6>
+                                         <h6>Birth Country: USA</h6>
+                                         <h6>Marital Status: Unknown</h6>
+                                         <h6>Military Status: No Military Service</h6>
                                     </span>
                                 }
                                 socials={
                                     <div>
-                                        <Button simple><i className="fa fa-facebook-square"></i></Button>
-                                        <Button simple><i className="fa fa-twitter"></i></Button>
-                                        <Button simple><i className="fa fa-google-plus-square"></i></Button>
+                                        <Button simple><i className="fa fa-asl-interpreting	Try it"></i></Button>
+                                        <Button simple><i className="fa fa-asl-interpreting	Try it"></i></Button>
+                                        <Button simple><i className="fa fa-asl-interpreting	Try it"></i></Button>
                                     </div>
                                 }
                             />
                         </Col>
 
                     </Row>
-                </Grid>>
+                </Grid>
             </div>
         );
     }
