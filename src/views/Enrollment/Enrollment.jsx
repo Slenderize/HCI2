@@ -221,7 +221,7 @@ class Typography extends Component {
               }, {
                 text: '18', value: 18
               } ],  // which page you want to show as default
-            sizePerPage: 18,  // which size per page you want to locate as default
+            sizePerPage: 14,  // which size per page you want to locate as default
             pageStartIndex: 1, // where to start counting the pages
             paginationSize: 3,  // the pagination bar size.
             prePage: 'Prev', // Previous page button text
